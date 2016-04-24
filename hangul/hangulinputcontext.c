@@ -325,7 +325,7 @@ static const HangulConversion hangul_conversion_3_p3 = {
 };
 
 
-static const char sebeol_3_moeum_key[] = {'/', '9', 0x00};  // ㅗ, ㅜ // 공병우 계열
+static const char sebeol_3_moeum_key[] = {'/', '9', '8'};  // ㅗ, ㅜ // 공병우 계열
  
 static const HangulKeyboard hangul_keyboard_2 = {
     HANGUL_KEYBOARD_TYPE_JAMO,
