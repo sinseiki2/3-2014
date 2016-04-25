@@ -324,11 +324,6 @@ static const HangulConversion hangul_conversion_3_p3 = {
     (HangulConversionItem*)hangul_conversion_table_3_p3
 };
 
-static const HangulCombination hangul_combination_3shin_p = {
-    N_ELEMENTS(hangul_combination_table_3shin_p),
-    (HangulCombinationItem*)hangul_combination_table_3shin_p
-};
-
 static const HangulConversion hangul_conversion_3shin_p = {
     N_ELEMENTS(hangul_conversion_table_3shin_p),
     (HangulConversionItem*)hangul_conversion_table_3shin_p
@@ -528,14 +523,14 @@ static const HangulKeyboard hangul_keyboard_3_p3 = {
     &hangul_conversion_3_p3
 };
 
-static const HangulKeyboard hangul_keyboard_shin3_p = {
+static const HangulKeyboard hangul_keyboard_3shin_p = {
     HANGUL_KEYBOARD_TYPE_JASO_SHIN,
-    "s3-p",
-    N_("Sebeolsik Shin3-P"),
-    (ucschar*)hangul_keyboard_table_shin3_p,
+    "3s-p",
+    N_("Sebeolsik 3Shin-P"),
+    (ucschar*)hangul_keyboard_table_3shin_p,
     &hangul_combination_3_p3,
     (char *)shinsebeol_3_moeum_key,
-    &hangul_conversion_shin3_p
+    &hangul_conversion_3shin_p
 };
 
 static const HangulKeyboard* hangul_keyboards[] = {
@@ -558,7 +553,7 @@ static const HangulKeyboard* hangul_keyboards[] = {
     &hangul_keyboard_3_2014,
     &hangul_keyboard_3_2015,
     &hangul_keyboard_3_p3,
-	&hangul_keyboard_shin3_p,
+	&hangul_keyboard_3shin_p,
 };
 
 
