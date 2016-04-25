@@ -324,8 +324,19 @@ static const HangulConversion hangul_conversion_3_p3 = {
     (HangulConversionItem*)hangul_conversion_table_3_p3
 };
 
+static const HangulCombination hangul_combination_3shin_p = {
+    N_ELEMENTS(hangul_combination_table_3shin_p),
+    (HangulCombinationItem*)hangul_combination_table_3shin_p
+};
 
-static const char sebeol_3_moeum_key[] = {'/', '9', '8'};  // ㅗ, ㅜ // 공병우 계열
+static const HangulConversion hangul_conversion_3shin_p = {
+    N_ELEMENTS(hangul_conversion_table_3shin_p),
+    (HangulConversionItem*)hangul_conversion_table_3shin_p
+};
+
+
+static const char sebeol_3_moeum_key[] = {'/', '9', '8'};  // ㅗ, ㅜ, ㅡ // 공병우 계열
+static const char shinsebeol_3_moeum_key[] = {'p', 'o', 'i', '/'};  // ㅗ, ㅜ, ㅡ // 신광조 계열
  
 static const HangulKeyboard hangul_keyboard_2 = {
     HANGUL_KEYBOARD_TYPE_JAMO,
@@ -517,6 +528,16 @@ static const HangulKeyboard hangul_keyboard_3_p3 = {
     &hangul_conversion_3_p3
 };
 
+static const HangulKeyboard hangul_keyboard_shin3_p = {
+    HANGUL_KEYBOARD_TYPE_JASO_SHIN,
+    "s3-p",
+    N_("Sebeolsik Shin3-P"),
+    (ucschar*)hangul_keyboard_table_shin3_p,
+    &hangul_combination_3_p3,
+    (char *)shinsebeol_3_moeum_key,
+    &hangul_conversion_shin3_p
+};
+
 static const HangulKeyboard* hangul_keyboards[] = {
     &hangul_keyboard_2,
     &hangul_keyboard_2y,
@@ -536,7 +557,8 @@ static const HangulKeyboard* hangul_keyboards[] = {
     &hangul_keyboard_3_2012_loose,
     &hangul_keyboard_3_2014,
     &hangul_keyboard_3_2015,
-	&hangul_keyboard_3_p3,
+    &hangul_keyboard_3_p3,
+	&hangul_keyboard_shin3_p,
 };
 
 
