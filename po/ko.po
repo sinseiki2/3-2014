@@ -86,3 +86,7 @@ msgstr "세벌식 3-2015"
 #: hangul/hangulinputcontext.c:512
 msgid "Sebeolsik 3-P3"
 msgstr "세벌식 3-P3"
+
+#: hangul/hangulinputcontext.c:522
+msgid "Shinsebeolsik P"
+msgstr "신세벌식 P"
