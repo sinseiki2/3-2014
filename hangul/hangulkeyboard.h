@@ -3122,7 +3122,7 @@ static const HangulConversionItem hangul_conversion_table_3_p3[] = {
     {0x11c2, 0x11b2}, /* jongseong hieuh (ㅎ):   jongseong rieul-pieup (ㄼ)      */
 };
 
-static const ucschar hangul_keyboard_table_shin3_p[] = {
+static const ucschar hangul_keyboard_table_3shin_p[] = {
      0x0000,        /*    0x00    :    null    :        */
     0x0000,        /*    0x01    :    start of heading    :        */
     0x0000,        /*    0x02    :    start of text    :        */
@@ -3255,7 +3255,7 @@ static const ucschar hangul_keyboard_table_shin3_p[] = {
 };
 
 
-static const HangulConversionItem hangul_conversion_table_shin3_p[] = {
+static const HangulConversionItem hangul_conversion_table_3shin_p[] = {
  /*  */
     {0x00D7,	0x302F},  /* 0x59 Y:  multiplication (×) -> 0x302F (〯) */
     /* choseong -> jungseong */
